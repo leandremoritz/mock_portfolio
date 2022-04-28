@@ -9,18 +9,32 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/28c2fb0c61.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <body>
-    <section class="navbar">
-    <nav>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="#HOME" class="link"> <i class="fa-solid fa-house"></i></a></li>
-          <li class="nav-link"><a href="#ABOUT" class="link"><i class="fa-solid fa-user"></i></a></li>
-          <li class="nav-link"><a href="#SKILLS" class="link"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-          <li class="nav-link"><a href="#PROJECTS" class="link"><i class="fa-solid fa-address-card"></i></a></li>
-          <li class="nav-link"><a href="#CONTACT" class="link"><i class="fa-solid fa-envelope"></i></a></li>
-        </ul>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler"
+       type="button" data-bs-toggle="collapse"
+      data-bs-target="#nav-links" aria-controls="navbarNavAltMarkup"
+      aria-expanded="falsearia-label="
+                  Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="nav-links">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#HOME">HOME</a>
+              <a class="nav-link" href="#ABOUT">ABOUT</a>
+              <a class="nav-link" href="#SKILLS">SKILLS</a>
+              <a class="nav-link" href="#PROJECTS">PROJECTS</a>
+              <a class="nav-link" href="#CONTACT" tabindex="-1" aria-disabled="true">CONTACT</a>
+            </div>
+          </div>
+        </div>
       </nav>
-    </section>
+    
  <section id="HOME">
 
    <div id="hometext"><h1 data-aos="zoom-in-left">I am Le-Andre</h1>
@@ -31,63 +45,83 @@
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-whatsapp"></i>
     </div>
+    <button><i class="fa-solid fa-bars"></i></button>
  </section>
- <section id="ABOUT">
-     <h1> ABOUT </h1>
-     <div>
-     <h2 style="color: white;"> I enjoy building everything from small business sites to rich interactive web apps.</h2>
+ <section id="ABOUT" class="container bg-white shadow-sm mt-3 p-3" >
+<div class="row">
+ <div class="col-md-6">
+     <div class="container-fluid">
+
      </div>
-<div id="aboutcontainer">
-   
-<h3>WEB DEVELOPER</h3> 
+     <div class="row">
+       <div class="col">
+           <img src="https://picsum.photos/200" class="rounded" alt="my pic">
+       </div>
+        <div class="col">
+            <div class="d-flex flex-column justify-content-between h-100">
+            <p><span class="fw-bold">Name:</span> Le-Andre Moritz</p>
+            <p><span class="fw-bold">Profile:</span> Full Stack Developer</p>
+            <p><span class="fw-bold">Email:</span> leandremoritz19@gmail.com</p>
+            <p><span class="fw-bold">Number:</span> 074 369 4526</p>
+        </div>
+     </div>
+ </div>
 
-<div id=aboutcontainer2>
-    <img src="./pexels-min-an-1087735.jpg" alt="about">
-    <ul>
-    
-    <li>Birthday : 15 November 2003 </li>
-    
-<li>  Age      : 18 </li>
+ <h5 class="mt-3"> Skills</h5>
+ <p>HTML 85%</p>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <p>CSS 70%</p>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <p>JavaScript 35%</p>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 
-<li>  Phone    : 063 504 9120 </li>
-
-<li>  Email    : leandremoritz19@gmail.com </li>
-    
-</ul>
-<p>  I'm a well thought out person who enjoys solving complex problems. I love sightseeing and traveling and will gladly welcome any adventure.</p>
-
+      </div>
+      
+    </div>
+ <div class="col-md-6">
+    <h1 class="mt-3 border-bottom border-4 border-primary">About</h1>
+    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nostrum dicta dignissimos voluptas quidem vitae quaerat ea error repudiandae laudantium, placeat voluptates, quis nemo sint ab nisi amet voluptate, enim eaque illum quos inventore. Consequatur nemo omnis saepe natus quae!</p>
+    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nostrum dicta dignissimos voluptas quidem vitae quaerat ea error repudiandae laudantium, placeat voluptates, quis nemo sint ab nisi amet voluptate, enim eaque illum quos inventore. Consequatur nemo omnis saepe natus quae!</p>
+    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nostrum dicta dignissimos voluptas quidem vitae quaerat ea error repudiandae laudantium, placeat voluptates, quis nemo sint ab nisi amet voluptate, enim eaque illum quos inventore. Consequatur nemo omnis saepe natus quae!</p>
+  </div>
+ </div>
+ 
 </div>
  </section>
-<section id="skills">
- <div id="SKILLS">
-    <h1>SKILLS</h1>
-    <div class="meter">
-        <p data-aos="fade-down">HTML</p>
-        <meter value="0.80"></meter>
-        <p data-aos="fade-down">CSS</p>
-        <meter value="0.50"></meter>
-        <p data-aos="fade-down">JAVASCRIPTS</p>
-        <meter value="0.01"></meter>
-    </div>
-</div>
-</section>
-<section id="resume">
+ <section id="resume">
     <h1>RESUME</h1>
 <div class="resumecontainer" data-aos="flip-left">
     <div class="blocks">
         <h2>EDUCATION</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti magni fugit architecto reprehenderit aut voluptatum, blanditiis enim nisi earum dolores praesentium nihil voluptatem similique esse distinctio qui nemo ad numquam.</p>
 
     </div>
     <div class="blocks">
         <h2>WORK EXPIERENCE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi rem dignissimos magnam dicta, tempora exercitationem!</p>
+    </div>
+    <div class="blocks">
+        <h2>INTEREST</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat praesentium saepe reprehenderit odit suscipit ut tempora nostrum, dicta doloremque explicabo distinctio omnis hic ratione itaque?</p>
+    </div>
+    <div class="blocks">
+        <h2>SOFT SKILLS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus iste magnam voluptatibus reiciendis porro commodi quia necessitatibus exercitationem alias, illo vero numquam impedit!</p>
+    </div>
+    <div class="blocks">
+        <h2>REFERENCES</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sapiente in numquam iure corrupti aut iste. Quia sequi rerum hic eos tempore, minima ratione fuga id perspiciatis ut iusto. Itaque.</p>
     </div>
 </div>
 </section>
 <section id="PROJECTS">
     <h1>PROJECTS</h1>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     <img src="./1 (7).jpg" alt="PROJECTS" data-aos="zoom-in">
     <img src="./1 (6).jpg" alt="PROJECTS"  data-aos="zoom-in">
     <img src="./1 (5).jpg" alt="PROJECTS" data-aos="zoom-in">
@@ -162,8 +196,10 @@ method="POST">
   
   <p>Click the "Submit" button and the form-data will be sent to a page on the 
   server called "action_page.php".</p>
+
 </section>
-<footer>
+
+<section id="footer">
     <h1>____Le-Andre Moritz___</h1>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
     <script src="https://kit.fontawesome.com/28c2fb0c61.js" crossorigin="anonymous"></script>
@@ -171,16 +207,20 @@ method="POST">
     <i class="fa-brands fa-facebook-square"></i>
     <i class="fa-brands fa-facebook-messenger"></i>
     <i class="fa-brands fa-whatsapp-square"></i> </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
-  </body>
-  </html>
+</section>
 
-    
 
-    
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+     AOS.init();
+   </script>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+
+    
+
+    
+

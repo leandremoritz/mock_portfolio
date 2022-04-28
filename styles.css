@@ -4,12 +4,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{ background-color: white;}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    background-color: aqua;
-}
+body
+{ background-color: black;
+font-size: smaller;
+font-family: serif !important;}
+
+
 
 .navbar , nav{
     display: flex;
@@ -18,8 +18,7 @@ body{ background-color: white;}
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
-    margin: 50px 0px;
-    width: fit-content;
+
     position: fixed;
     color: aliceblue;
     
@@ -28,17 +27,32 @@ body{ background-color: white;}
 }
 
 #HOME {
-    background-image: url(./alex-fxrwJGMCz_g-unsplash.jpg);
+    background-image: url(./1\ \(4\).jpg);
     background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 30px ;
     text-shadow: 3px 2px 2px solid black;
      width: 100vw;
      color: white;
+     text-align: center; 
+    }
+    
+button {
+    top: 0;
+    right: 60px;
+    position: fixed;
+    font-size: 30px;
+    height: 0px;
+    width: 0px; 
+     color: white; 
+    display: none;
+}
+.fa-solid fa-bars {
+    padding-right: 30px;
 }
 
 .HOME #hometext{
@@ -49,312 +63,158 @@ body{ background-color: white;}
     color: rgb(255, 255, 255);
     text-shadow: 3px 5px 5px solid rgb(15, 15, 15); 
 }
-i {width: 0;
-height: 0;
-}
-#HOME h1  {
-    text-shadow: 10px 30px 13px black;
-}
-
-
-.fa-solid{
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: white;
-}
-.fa-solid:hover{
-    color: black;
-
-}
-
-li.nav-link {
-    margin-bottom: 40px;
-}
-.fa-brands{
-    margin: 20px;
-    width: 20px;
-    font-size: 0.5em;
-    color: white;
-}
-.fa-brands:hover{
-    color: black;
-}
-#ABOUT h1 , #SKILLS h1 , #resume h1 , #PROJECTS h1 , #CONTACT h1 , #TESTIMONIALS h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 10px 20px  22px grey;
-    padding-bottom: 10px;
-    color: grey;
+    #HOME h1  {
+        text-shadow: 10px 30px 13px black;
     }
-    #ABOUT h2 {
+    #SKILLS h1 , #resume h1 , #PROJECTS h1 , #CONTACT h1 , #TESTIMONIALS h1 {
         display: flex;
         justify-content: center;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 10px 20px  22px grey;
+        padding-bottom: 10px;
+        color: grey;
     }
-#ABOUT{
-     background-color: black;
-    background-size: cover;
-    padding-left: 10%;
-    padding-right: 10%;
-    max-width: 100%;
-    min-height: 100vh;
-}
- #aboutcontainer{
-     min-height: 100vh;
-    display: flex;
-    max-height: 100vh;
-    background-color:transparent;
-    justify-content: center;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-    min-width: 90%;
-    
-    
-
-}
-#aboutcontainer img {
-    width: 400px;
-    height: 400px;
-    margin-right: 30px;
-    padding-top: 10px;
-}
-#aboutcontainer2{
-    width:100% ;
-    min-height: 70%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    flex-wrap: wrap;
-    padding : 2%;
-    box-shadow: 3px 3px 4px 4px grey;
-    
-}
-
-h3 {
-    text-shadow: 10px 10px 18px black;
-    font-size: 3rem;
-    color: grey;
-}
-h4{
-    display: flex ;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-}
-#skills{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    background-size: cover;
-    min-height: 100%;
-}
-
-#SKILLS{
-    min-width: 80%;
-    min-height: 70%;
-    background-color: white;
-    padding-right: 200px;
-    padding-left: 200px;
-    color: black;
-    margin: 4%;
-    box-shadow: 3px 3px 4px 4px grey;
-}
-.meter{
-    min-width: 80%;
-    font-size: 300%; 
-    
-  }
-
-#SKILLS p {
-    color: black;
-}
-#resume{
-    min-width: 100%;
-    min-height: 100vh;
-    background-color: black;
-    }
-.resumecontainer{
-    display: flex;
-    justify-content: center;
-    min-width: 50%;
-    background-color: transparent;
-    min-height: 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
-#resume h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 5rem;
-    text-shadow: 10px 20px  22px grey;
-    padding-bottom: 10px;
-    color: grey;
-    }
-  .blocks{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: white;
-      min-width: 30%;
-      min-height: 50vh;
-      box-shadow: 3px 3px 4px 4px grey;
-      margin: 5%;
-      }
-      .blocks h2 {
-        text-shadow: 10px 20px  22px black;
+    #resume{
+        min-width: 100%;
+        min-height: 80vh;
+        background-color:white;
         }
-
-        .blocks p {
-            line-height: 2;
-        }
-        #PROJECTS img{
-            width: 300px;
-            height: 250px;
-            flex-wrap: wrap;
-            margin: 2%;
-            box-shadow: 3px 3px 4px 4px grey;
-
-            
-        }
-        #PROJECTS{ padding-left: 20px;
-            background-color: black;
-        }
-        .forms {
-            padding: 2%;
-            margin: 2%;
-
-        }
-        #CONTACT{ background-color: white;
-            padding-left: 3%;
-            font-size: 1.5rem;
-            height: 100vh ;
-            padding-top: 5%;
-
-        }
-        #TESTIMONIAL{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 100vh;
-            min-width: 100vw;
-            padding: 5%;
-
-        }
-        .testimonialscontainer{
-            min-height: 100vh;
-            width:100%;
-            background-color: rgba(64, 64, 64, 0.3);
-            display: flex;
-            justify-content: space-around;
-            padding: 5%;
-        }
-        #TESTIMONIALS img {
-            width: 200px ;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: rgba(134, 129, 129, 0.3);
-            border-radius: 130%;
-            box-shadow: 3px 3px 4px 4px grey;
-        }
-        #TESTIMONIALS p{
-            padding-bottom: 3%;
-            padding-top: 3%;
-        }
-        footer h1{
-            font-size: 2rem;
-            padding-bottom: 1%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-shadow: 3px 2px 2px solid white;
-        }
-        footer .fa-brands{
-            margin: 2px;
-            width: 100px;
-            font-size: 1.5em;
-            color: black;
-        }
-        footer{
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            padding-left: 40%;
         
+    .resumecontainer{
+        display: flex;
+        justify-content: center;
+        min-width: 50%;
+        background-color: transparent;
+        min-height: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        flex-wrap: wrap;
+    
+    }
+    #resume h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 5rem;
+        text-shadow: 1px 2px  2px ;
+        padding-bottom: 10px;
+        color: black;
         }
-        footer p{
-            padding-bottom: 2%;
-            padding-left: 2%;
-        }
-          
-            
-            @media  screen and (width: 390px)  {
-          #hometext{
-           display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 25px; } d
-            #SKILLS{
-                display: flex;
-                 flex-direction: column;
-                justify-content: center;
-                 font-size: 10px
+      .blocks{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: white;
+          max-height: fit-content;
+          box-shadow: 3px 3px 4px 4px grey;
+          margin: 2%;
+          max-width: 20%;
+          padding:2%;
+          }
+          .blocks h2 {
+            text-shadow: 1px 2px  2px grey;
             }
-            #SKILLS h1 {
-                display: flex;
-                flex-direction: column;
-                font-size: 50px; }
-                #ABOUT h2{
-                    font-size: 25px;
-                }
-                #resume{
-                    font-size: 13px;
-                }
-                #resume h1{
-                    font-size: 50px;
-                }
-            #aboutcontainer2 img{
+    
+            .blocks p {
+                line-height: 2;
+            }
+            #PROJECTS img{
+                width: 300px;
+                height: 250px;
+                flex-wrap: wrap;
+                margin: 5%;
+                box-shadow: 3px 3px 4px 4px grey;
+    
                 
-                width: 270px;
-                height: 200px;
-                padding-left: 10px;
             }
-            #aboutcontainer2 p{
-                font-size: 20px;
+            #PROJECTS{ padding-left: 20px;
+                background-color: black;
             }
-            #aboutcontainer2 ul{
-                font-size: 15px;
+            #PROJECTS p{
+                padding-left: 40px;
+            }
+            .forms {
+                padding: 2%;
+                margin: 2%;
+    
+            }
+            #CONTACT{ background-color: white;
+                padding-left: 3%;
+                font-size: 1.5rem;
+                min-height: 100vh ;
+                padding-top: 5%;
+    
+            }
+            #TESTIMONIAL{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                padding-block: 20px;
-                padding-left: 20px;}
-               #aboutcontainer h3 {
-                font-size: 30px;
-               }
-               .meter {
+                min-height: 100vh;
+                min-width: 100vw;
+                padding: 5%;
+    
+            }
+            .testimonialscontainer{
+                min-height: 100vh;
+                width:100%;
+                background-color: rgba(64, 64, 64, 0.3);
+                display: flex;
+                justify-content: space-around;
+                padding: 5%;
+            }
+            #TESTIMONIALS img {
+                width: 200px ;
+                height: 150px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-               }
-
+                justify-content: center;
+                background-color: rgba(134, 129, 129, 0.3);
+                border-radius: 130%;
+                box-shadow: 3px 3px 4px 4px grey;
             }
+            #TESTIMONIALS p{
+                padding-bottom: 3%;
+                padding-top: 3%;
+            }
+            #footer{
+                background-color: rgb(93, 93, 93);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: fit-content;
+                justify-content: center;
+                align-content: center;
+                padding-left: 40%;
+            }
+
+            #footer h1{
+                font-size: 2rem;
+                padding-bottom: 1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-shadow: 3px 2px 2px solid white;
+            }
+
+            #footer .fa-brands{
+                margin: 2px;
+                width: 100px;
+                font-size: 1.5em;
+                color: black;
+                padding-right: 20px;
+            }
+
+            #footer p{
+                padding-bottom: 2%;
+                padding-left: 2%;
+            }
+
+
+
+            
 
             
             
