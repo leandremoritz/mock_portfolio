@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 }
 body
 { background-color: black;
@@ -41,16 +41,7 @@ font-family: serif !important;}
      text-align: center; 
     }
     
-button {
-    top: 0;
-    right: 60px;
-    position: fixed;
-    font-size: 30px;
-    height: 0px;
-    width: 0px; 
-     color: white; 
-    display: none;
-}
+
 .fa-solid fa-bars {
     padding-right: 30px;
 }
@@ -73,121 +64,228 @@ button {
         font-size: 3rem;
         text-shadow: 10px 20px  22px grey;
         padding-bottom: 10px;
-        color: grey;
+        color: black;
     }
     #resume{
-        min-width: 100%;
-        min-height: 80vh;
-        background-color:white;
-        }
-        
-    .resumecontainer{
-        display: flex;
-        justify-content: center;
-        min-width: 50%;
-        background-color: transparent;
-        min-height: 80%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 20px;
-        padding-left: 20px;
-        flex-wrap: wrap;
-    
+        font-size: 16px;
+        line-height: 1.5;
     }
-    #resume h1{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 5rem;
-        text-shadow: 1px 2px  2px ;
-        padding-bottom: 10px;
-        color: black;
-        }
-      .blocks{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          background-color: white;
-          max-height: fit-content;
-          box-shadow: 3px 3px 4px 4px grey;
-          margin: 2%;
-          max-width: 20%;
-          padding:2%;
-          }
-          .blocks h2 {
-            text-shadow: 1px 2px  2px grey;
-            }
+    h4 {
+        font-size: 26px;
+    }
+
     
-            .blocks p {
-                line-height: 2;
+        .wrapper {
+        display: grid;
+        max-width: 1140px;
+        margin: 0px auto;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,minmax(400px, auto));
+    }
+    .wrapper div {
+                background-color: #3BBCED;
+                padding: 15px;
             }
-            #PROJECTS img{
-                width: 300px;
-                height: 250px;
-                flex-wrap: wrap;
-                margin: 5%;
-                box-shadow: 3px 3px 4px 4px grey;
+    .wrapper div:nth-child(even) {
+                background-color: #777;
+            }
+    .box2 {
+        grid-column: 2/4;
+    }		
+    .box3 {
+        grid-column: 4;
+        grid-row: 1/3;
+    }	
+    .box4 {
+        grid-column: 1/4;
+    }
+   
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#PROJECTS {
+  padding-top: 40px;
+}
+#PROJECTS h1{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+margin-top: 5px;
+text-shadow: none;
+font-weight: normal !important;
+font-family: 'Open Sans', sans-serif;
+}
+.view p {
+font-family: Georgia, serif;
+font-style: italic;
+font-size: 12px;
+position: relative;
+color: #fff;
+padding: 10px 20px 10px;
+text-align: center;
+}
+
+.view-tenth p {
+color: #333;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+opacity: 0;
+-webkit-transform: scale(0);
+transform: scale(0);
+-webkit-transition: all 0.5s linear;
+transition: all 0.5s linear;
+}
+
+.view {
+z-index: 9;
+cursor: default;
+overflow: hidden;
+text-align: center;
+position: relative;
+margin-bottom: 30px;
+box-shadow: 0 0 3px #ddd;
+}
+
+.view .mask, .view .content {
+width: 100%;
+height: 50%;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+}
+
+.view img {
+display: block;
+width: 300px;
+height: 250px;
+position: relative;
+}
+
+.view-tenth img {
+left: -20px;
+margin-left: -10px;
+position: relative;
+-webkit-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.view-tenth:hover > img {
+-webkit-transform: scale(2) rotate(10deg);
+transform: scale(2) rotate(10deg);
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=30)";
+filter: alpha(opacity=30);
+opacity: 0.3;
+}
+
+.view h2 {
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+position: relative;
+font-size: 22px;
+padding: 10px;
+background: rgba(0, 0, 0, 0.8);
+margin: 20px 0 0 0;
+text-shadow: none;
+}
+
+.view-tenth h2 {
+color: #333;
+margin: 20px 40px 0;
+background: transparent;
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+-webkit-transform: scale(0);
+transform: scale(0);
+-webkit-transition: all 0.5s linear;
+transition: all 0.5s linear;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+opacity: 0;
+}
+
+.view a.info {
+color: #fff;
+background: #000;
+padding: 5px 12px;
+text-decoration: none;
+margin-top: 10px;
+display: inline-block;
+overflow: hidden;
+text-transform: uppercase;
+}
+
+.view a.info:hover {
+background: #72c02c;
+}
+
+.view-tenth a.info {
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+opacity: 0;
+-webkit-transform: scale(0);
+transform: scale(0);
+transition: all 0.5s linear;
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+-webkit-transform: scale(1);
+transform: scale(1);
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 1;
+}
+.img-responsive{
+    width: 400px;
+}
+#testimonials{
+    min-height: 90vh;
+    background-size: cover;
+    background-color: #3BBCED;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: serif;
     
-                
-            }
-            #PROJECTS{ padding-left: 20px;
-                background-color: black;
-            }
-            #PROJECTS p{
-                padding-left: 40px;
-            }
-            .forms {
-                padding: 2%;
-                margin: 2%;
+}
+#testimonials img{
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: #3BBCED!important;
+}
+
+
+
+          
+            
     
-            }
-            #CONTACT{ background-color: white;
-                padding-left: 3%;
-                font-size: 1.5rem;
-                min-height: 100vh ;
-                padding-top: 5%;
-    
-            }
-            #TESTIMONIAL{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                min-height: 100vh;
-                min-width: 100vw;
-                padding: 5%;
-    
-            }
-            .testimonialscontainer{
-                min-height: 100vh;
-                width:100%;
-                background-color: rgba(64, 64, 64, 0.3);
-                display: flex;
-                justify-content: space-around;
-                padding: 5%;
-            }
-            #TESTIMONIALS img {
-                width: 200px ;
-                height: 150px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background-color: rgba(134, 129, 129, 0.3);
-                border-radius: 130%;
-                box-shadow: 3px 3px 4px 4px grey;
-            }
-            #TESTIMONIALS p{
-                padding-bottom: 3%;
-                padding-top: 3%;
-            }
+               
+                .forms {
+                    padding: 2%;
+                    margin: 2%;
+        
+                }
+                #CONTACT{ background-color: white;
+                    padding-left: 3%;
+                    font-size: 1.5rem;
+                    min-height: 100vh ;
+                    padding-top: 5%;
+                }
             #footer{
-                background-color: rgb(93, 93, 93);
+                background-color: rgb(255, 255, 255);
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 height: fit-content;
                 justify-content: center;
                 align-content: center;
-                padding-left: 40%;
+                padding:1%;
             }
 
             #footer h1{
@@ -211,14 +309,24 @@ button {
                 padding-bottom: 2%;
                 padding-left: 2%;
             }
+           
 
-
-
-            
-
-            
-            
-        
-
-      
-        
+            @media only screen and (max-width : 800px) {
+                .wrapper {
+                grid-template-rows: repeat(3,minmax(300px, auto));
+            }
+            .box1 {
+                grid-column: 1/3;
+            }
+            .box2 {
+                grid-column: 3/5;
+            }	
+            .box3 {
+                grid-column: 1/5;
+                grid-row: 2;
+            }	
+            .box4 {
+                grid-column: 1/5;
+              grid-row: 3;
+            }
+        }
