@@ -1,7 +1,8 @@
 *{
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden !important;
     
 }
 body
@@ -36,9 +37,10 @@ font-family: serif !important;}
     justify-content: center;
     font-size: 30px ;
     text-shadow: 3px 2px 2px solid black;
-     width: 100vw;
+     width: 100%;
      color: white;
      text-align: center; 
+     margin-bottom: 5%;
     }
     
 
@@ -56,8 +58,20 @@ font-family: serif !important;}
 }
     #HOME h1  {
         text-shadow: 10px 30px 13px black;
+    
     }
-    #SKILLS h1 , #resume h1 , #PROJECTS h1 , #CONTACT h1 , #TESTIMONIALS h1 {
+
+#ABOUT{
+    margin-top: 5%;   
+}
+#ABOUT h1 {
+    padding-top: 15px;
+}
+img.rounded{
+    padding-top: 70px;
+}
+
+    #SKILLS h1 , #resume h1 , #PROJECTS h1  {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -66,9 +80,12 @@ font-family: serif !important;}
         padding-bottom: 10px;
         color: black;
     }
-    #resume{
+    #SKILLS{
         font-size: 16px;
         line-height: 1.5;
+    }
+    #SKILLS h1 {
+        padding-top: 100px;
     }
     h4 {
         font-size: 26px;
@@ -77,11 +94,12 @@ font-family: serif !important;}
     
         .wrapper {
         display: grid;
-        max-width: 1140px;
-        margin: 0px auto;
+        max-width: 1500px;
+        /* margin: 0px auto; */
         grid-gap: 10px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2,minmax(400px, auto));
+        
     }
     .wrapper div {
                 background-color: #3BBCED;
@@ -100,14 +118,20 @@ font-family: serif !important;}
     .box4 {
         grid-column: 1/4;
     }
+    
    
 
     @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 #PROJECTS {
   padding-top: 40px;
+  
 }
 #PROJECTS h1{
     font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+}
+#PROJECTS img {
+    padding-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -165,7 +189,7 @@ position: relative;
 
 .view-tenth img {
 left: -20px;
-margin-left: -10px;
+/* margin-left: -10px; */
 position: relative;
 -webkit-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
@@ -187,13 +211,14 @@ position: relative;
 font-size: 22px;
 padding: 10px;
 background: rgba(0, 0, 0, 0.8);
-margin: 20px 0 0 0;
+/* margin: 20px 0 0 0; */
+padding-top: 20px;
 text-shadow: none;
 }
 
 .view-tenth h2 {
 color: #333;
-margin: 20px 40px 0;
+padding: 20px 40px 0;
 background: transparent;
 border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 -webkit-transform: scale(0);
@@ -241,41 +266,68 @@ opacity: 1;
 .img-responsive{
     width: 400px;
 }
-#testimonials{
-    min-height: 90vh;
+
+    
+
+#overlay{
+    width: 100%;
     background-size: cover;
-    background-color: #3BBCED;
+    position: absolute;
+   
+    background-position: center
+    ;
+    background-color: rgba(233, 208, 208, 0.3);
+}
+#testimonials{
+    background: linear-gradient(rgba(175, 179, 180, 0.7),rgba(175, 179, 180, 0.7)), url(https://picsum.photos/1920) ;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-family: serif;
+
+}
+ #testimonials h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+position: relative;
+    color: #45505b;
     
-}
-#testimonials img{
-    width: 20%;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background-color: #3BBCED!important;
-}
-
-
-
-          
-            
-    
-               
+} 
                 .forms {
                     padding: 2%;
-                    margin: 2%;
+                    /* margin: 2%; */
         
                 }
                 #CONTACT{ background-color: white;
                     padding-left: 3%;
-                    font-size: 1.5rem;
+                    font-size: 20px;
                     min-height: 100vh ;
                     padding-top: 5%;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+       position: relative;
+                    color: #45505b;
+                }
+                #CONTACT h1{
+                    font-size: 30px;
+                    font-size: 32px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                    margin-bottom: 20px;
+                 padding-bottom: 20px;
+    position: relative;
+                 color: #45505b;
+                 display: flex;
+                 justify-content: center;
+                }
+                #CONTACT p{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+       position: relative;
+                    color: #45505b;
                 }
             #footer{
                 background-color: rgb(255, 255, 255);
@@ -294,11 +346,14 @@ opacity: 1;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                text-shadow: 3px 2px 2px solid white;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+   position: relative;
+                color: #45505b;
             }
 
             #footer .fa-brands{
-                margin: 2px;
+                /* margin: 2px; */
                 width: 100px;
                 font-size: 1.5em;
                 color: black;
@@ -308,6 +363,10 @@ opacity: 1;
             #footer p{
                 padding-bottom: 2%;
                 padding-left: 2%;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+   position: relative;
+                color: #45505b;
             }
            
 
@@ -329,4 +388,14 @@ opacity: 1;
                 grid-column: 1/5;
               grid-row: 3;
             }
+        img.img-responsive{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+
         }
+
+        }
+        
