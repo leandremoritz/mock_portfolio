@@ -43,6 +43,36 @@ font-family: serif !important;}
      margin-bottom: 5%;
     }
     
+    #HOME{
+        height: 100vh;
+        /*This part is important for centering*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+    
 
 .fa-solid fa-bars {
     padding-right: 30px;
@@ -393,7 +423,6 @@ position: relative;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-left: 20px;
 
         }
 
